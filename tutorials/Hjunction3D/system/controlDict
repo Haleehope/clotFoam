@@ -16,7 +16,7 @@ FoamFile
 
 application     clotFoam;
 
-coagReactionsOn true;
+coagReactionsOn false;
 
 smoothHadh      false;
 
