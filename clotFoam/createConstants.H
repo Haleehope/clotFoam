@@ -67,7 +67,7 @@ dimensionedScalar D_ADP
     inputParameters.lookup("D_ADP")
 );
 
-// Total ADP Released (\hat A)
+// Total ADP Released (\hat A) ------------------------------------------------------------------------------------------------------------
 dimensionedScalar ADP_rel
 (
     "ADP_rel",

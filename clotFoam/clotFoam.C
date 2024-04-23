@@ -83,11 +83,11 @@ Author: David Montgomery
 #include "odeSolver.H"
 
 // Rate of ADP release bell function R(tau)
-double R_ADP(const double& tau)
-{
-    return std::exp(-1.*std::pow( tau - 3.0, 2.0)) 
-        / std::sqrt(constant::mathematical::pi);
-}
+// double R_ADP(const double& tau) // ------------------------- Work on removing this
+// {
+//     return std::exp(-1.*std::pow( tau - 3.0, 2.0)) 
+//         / std::sqrt(constant::mathematical::pi);
+// }
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -101,11 +101,11 @@ int main(int argc, char *argv[])
 
     // Create the constants and fields for simulation
     #include "createConstants.H"
-    #include "createFields.H"
+    #include "createFields.H" 
     #include "initContinuityErrs.H"
 
     // Set up the sigma release source term for ADP
-    #include "initSigmaReleaseADP.H"
+    // #include "initSigmaReleaseADP.H" // ------------------------- Work on removing this
 
     // Set necessary pointers for each species
     #include "setSpeciesPointers.H"
@@ -154,7 +154,7 @@ int main(int argc, char *argv[])
         }
 
         // Transport ADP and update sigma_release
-        #include "ADP.H" 
+        #include "ADP.H" // -------------------------------------------- Work on editing this
 
         runTime.write();
 

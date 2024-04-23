@@ -126,6 +126,21 @@ volScalarField Theta_B
     0.0*eta
 );
 
+// Bound Platelet Fraction ----------------------------------------------------------------------------------------------------
+Info<< "Reading field Theta_B_prv\n" << endl;
+volScalarField Theta_B_prv
+(
+    IOobject
+    (
+        "Theta_B_prv",
+        runTime.timeName(),
+        mesh,
+        IOobject::READ_IF_PRESENT,
+        IOobject::AUTO_WRITE
+    ),
+    0.0*eta
+);
+
 /**************************************************************************
     Fields for ADP and ADP source term
 ***************************************************************************/
