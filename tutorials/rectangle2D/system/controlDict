@@ -59,7 +59,7 @@ DebugSwitches
     SolverPerformance   0;                                   
 }
 
-functions
+<!-- functions
 {
     writeTimes_ADPSourceTerm
     {
@@ -116,6 +116,6 @@ functions
         writeControl    writeTime;
         writeInterval   2;
     }
-}
+} -->
 
 // ************************************************************************* //
