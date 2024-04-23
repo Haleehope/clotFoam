@@ -19,7 +19,7 @@ ADPEqn.solve();
 ADP.correctBoundaryConditions();
 
 // --------------------------------------- update theta_b_prv, change theta_b_prv to theta_b
-Theta_B.oldtime() = Theta_B;
+
 
 
 // Update the sigma_release function
